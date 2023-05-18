@@ -8,6 +8,7 @@ contract zombieFactory{
         string name; 
         uint dna;
     }
+    enum level {start,medium,pro}
     zombie[] public zombies;
     function _createZombie( string memory _name, uint  _dna) private{
         zombies.push(zombie(_name,_dna));
